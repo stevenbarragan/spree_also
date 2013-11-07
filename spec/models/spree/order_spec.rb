@@ -9,7 +9,7 @@ describe Spree::Order do
         @products = @order.products
       end
 
-      it 'relates all products bought' do
+      it 'gets all related products bought' do
         product = @products.shift
         expect(product.also_bought).to eq @products
       end
