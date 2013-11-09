@@ -18,5 +18,9 @@ describe Spree::Product do
       expect(product2.also_bought).to eq [product1, product3, product4]
       expect(product4.also_bought).to eq [product1, product2, product3]
     end
+
+    it 'returns only a limited number of related products' do
+      expect(product1.also_bought(1)).to eq [product2]
+    end
   end
 end
