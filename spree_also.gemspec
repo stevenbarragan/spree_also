@@ -3,8 +3,8 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_also'
   s.version     = '2.1.2'
-  s.summary     = 'TODO: Add gem summary here'
-  s.description = 'TODO: Add (optional) gem description here'
+  s.summary     = 'Get also bougth related products'
+  s.description = 'TODO: Add (optional) gem description here, It relates all products in an order when it gets completed'
   s.required_ruby_version = '>= 1.9.3'
 
   s.author    = 'Steven Barragan Naranjo'
