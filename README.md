@@ -1,7 +1,15 @@
 SpreeAlso
 =========
 
-Introduction goes here.
+This extension allows you get related products based on the user orders.
+It relates all products in an order when it gets completed.
+
+```ruby
+product.also_bought
+=> [ #<Spree::Product id: 2>, #<Spree::Product id: 3>, #<Spree::Product id: 4> ... ]
+```
+
+The products are returned sorted by the amount of times it has been related (they have been bought together), if product_1 has been bought with product_2 more times than the product_3, product_2 is returned first than product_3
 
 Installation
 ------------
@@ -9,7 +17,7 @@ Installation
 Add spree_also to your Gemfile:
 
 ```ruby
-gem 'spree_also'
+gem 'spree_also', github: 'stevenbarragan/spree_also'
 ```
 
 Bundle your dependencies and run the installation generator:
