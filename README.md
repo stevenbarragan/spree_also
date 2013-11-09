@@ -1,5 +1,6 @@
 SpreeAlso
 =========
+[![Build Status](https://travis-ci.org/stevenbarragan/spree_also.png?branch=master)](https://travis-ci.org/stevenbarragan/spree_also)
 
 This extension allows you get related products based on the user orders.
 It relates all products in an order when it gets completed.
